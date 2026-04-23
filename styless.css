@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 8px 10px;
+
+}
+
+body {
+    background-color: rgb(22, 52, 153);
+    background-image: url("lospibes/50-Beautiful-and-Minimalist-Presentation-Backgrounds-013.webp")
+}
+
+article {
+
+
+    border-radius: 12px;
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: ce;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    width: 50%;
+}
+
+img {
+    width: 60%;
+    border-radius: 40%;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+
+}
