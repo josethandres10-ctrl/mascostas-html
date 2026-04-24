@@ -1,28 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <link rel="stylesheet" href="styless.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>joseth </title>
-  </head>
-  <body>
-    <header> 
-     <h1>joseth</h1>
-     <nav>
-        <ul>
+    <title>Portafolio Joseth</title>
+
+ 
+    <link rel="stylesheet" href="styless.css">
+</head>
+
+<body>
+
+ 
+    <header>
+        <h1>Joseth Andrés</h1>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="mascotas.html">Mascotas</a></li>
+                <li><a href="#proyectos"></a> </li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+
+        <p id="texto">
+            Hola, soy Joseth Andrés. Soy estudiante y me gusta aprender sobre
+            tecnología, programación y desarrollo web. Actualmente estoy
+            mejorando mis conocimientos en HTML, CSS y JavaScript para seguir
+            creciendo en este mundo.
+
+            Me gusta la música, especialmente la guaracha, el trap, la salsa
+            y realmente escucho de todo un poco. También me gusta pasar tiempo
+            tranquilo, aprender cosas nuevas y trabajar en mis proyectos.
+
+            No me gusta el desorden, perder el tiempo ni las cosas mal hechas.
+            Siempre trato de mejorar y hacer todo cada vez mejor.
+        </p>
+
+   
+        
+      
+      </section>
+        
+        
+        
+        <button onclick="cambiarTexto()">
+            Cambiar texto
+        </button>
+    </section>
+    <section id="proyectos" class="proyectos"
+    <h3>proyectos </h3>
+    <div class="proyectos-grid">
+      <div class="proyectos"><a href="https://github.com/josethandres10-ctrl/mascostas-html.git"></a></div>
+      <div class="proyectos2"></div>
+      <div class="proyectos3"></div>
+    </div>
+  </section>
+
+   
+    <section id="contacto">
+        <h2>Contacto</h2>
+
+        <form>
+            <input type="text" placeholder="Tu nombre">
+            <input type="email" placeholder="Tu correo">
+            <button type="submit">
+                Enviar
+            </button>
+        </form>
+    </section>
+
+
+    <section>
+        <h2>Interactividad</h2>
+
+        <button onclick="mostrarMensaje()">
+            Bienvenida
+        </button>
+
+        <button onclick="mostrarOcultar()">
+            Mostrar / Ocultar
+        </button>
+
+    </section>
+
     
-       <li><a href="#sobre-mi">sobre mi</a></li>
-
-
-       <li><a href="#proyecto">proyecto</a></li>
-       <li><a href="contacto ">contacto</a></li>
-       <li><a href="mascotas.html">mascotas</a></li>
-       </ul>
-       </nav>
-     </header>
-
-
     
+
 </body>
+
 </html>

@@ -1,48 +1,131 @@
+/* estilos basicos */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #163499;
+    background-image: url("lospibes/50-Beautiful-and-Minimalist-Presentation-Backgrounds-013.webp");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
+/* header */
 
 header {
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    padding: 8px 10px;
-
+    align-items: center;
+    padding: 20px;
 }
 
-body {
-    background-color: rgb(22, 52, 153);
-    background-image: url("lospibes/50-Beautiful-and-Minimalist-Presentation-Backgrounds-013.webp")
+/* menu */
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: yellow;
+}
+
+/* secciones */
+
+section {
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+/* texto */
+
+.descripcion {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* formulario */
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* botones */
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* mascotas */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 article {
-
-
-    border-radius: 12px;
-    font-family: Verdana, Tahoma, sans-serif;
-    text-align: ce;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    width: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 img {
-    width: 60%;
-    border-radius: 40%;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
-a {
-    display: flex;
-    text-decoration: none;
-    align-items: center;
+/* responsive */
 
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
 }
